@@ -12,6 +12,7 @@
 		9064126C1D1C51DE00311F18 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9064126B1D1C51DE00311F18 /* ViewController.m */; };
 		9064126E1D1C51DE00311F18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9064126D1D1C51DE00311F18 /* Assets.xcassets */; };
 		906412711D1C51DE00311F18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9064126F1D1C51DE00311F18 /* Main.storyboard */; };
+		906412791D1C931400311F18 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 906412781D1C931400311F18 /* Credits.rtf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		9064126D1D1C51DE00311F18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		906412701D1C51DE00311F18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		906412721D1C51DE00311F18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		906412781D1C931400311F18 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				906412681D1C51DE00311F18 /* main.m */,
+				906412781D1C931400311F18 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -134,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9064126E1D1C51DE00311F18 /* Assets.xcassets in Resources */,
+				906412791D1C931400311F18 /* Credits.rtf in Resources */,
 				906412711D1C51DE00311F18 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
