@@ -16,6 +16,8 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
 	// Insert code here to initialize your application
+	[[NSUserDefaults standardUserDefaults] removeObjectForKey:@"filepath"];
+	[[NSUserDefaults standardUserDefaults] removeObjectForKey:@"currentfiledate"];
 }
 
 - (IBAction)openPanel:(id)sender {

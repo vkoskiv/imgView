@@ -678,17 +678,28 @@
                                 <rect key="frame" x="17" y="17" width="446" height="236"/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" imageFrameStyle="grayBezel" id="dqW-It-EZN"/>
                             </imageView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wgr-nq-m4d">
+                                <rect key="frame" x="18" y="0.0" width="249" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="No File Selected" id="YMo-cV-XYn">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                         <constraints>
                             <constraint firstItem="8tO-Kc-7AM" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="CAh-su-KR3"/>
                             <constraint firstItem="8tO-Kc-7AM" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" id="E6r-aA-c3N"/>
                             <constraint firstItem="8tO-Kc-7AM" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="R06-yz-i3S"/>
                             <constraint firstAttribute="trailing" secondItem="8tO-Kc-7AM" secondAttribute="trailing" constant="20" id="diU-8y-byz"/>
+                            <constraint firstItem="Wgr-nq-m4d" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="dxM-if-5jP"/>
                             <constraint firstItem="8tO-Kc-7AM" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="elj-pw-Ify"/>
+                            <constraint firstAttribute="bottom" secondItem="Wgr-nq-m4d" secondAttribute="bottom" id="hgm-lv-oVi"/>
                             <constraint firstAttribute="bottom" secondItem="8tO-Kc-7AM" secondAttribute="bottom" constant="20" id="mjQ-A1-mc3"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="fileNameLabel" destination="Wgr-nq-m4d" id="iJu-iv-dFV"/>
                         <outlet property="mainImageView" destination="8tO-Kc-7AM" id="hGo-jp-ckJ"/>
                     </connections>
                 </viewController>

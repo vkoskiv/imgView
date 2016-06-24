@@ -12,6 +12,7 @@
 @interface ViewController : NSViewController <NSApplicationDelegate>{
 	__weak IBOutlet NSImageView *mainImageView;
 }
+@property (weak) IBOutlet NSTextField *fileNameLabel;
 
 @property (strong, nonatomic) AppDelegate *mainDelegate;
 

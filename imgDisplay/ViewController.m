@@ -15,6 +15,7 @@
 	[super viewDidLoad];
 	
 	self.mainDelegate = [[AppDelegate alloc] init];
+	[mainImageView setImageScaling:NSImageScaleProportionallyUpOrDown];
 	
 	NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(updateView) userInfo:nil repeats:YES];
 	[timer fire];
@@ -32,6 +33,8 @@
 				NSURL *url = [[NSUserDefaults standardUserDefaults] URLForKey:@"filepath"];
 				NSImage *img = [[NSImage alloc] initWithContentsOfURL:url];
 				[mainImageView setImageScaling:NSImageScaleProportionallyUpOrDown];
+				NSString *fileString = [NSString stringWithFormat:@"%@ %llu Bytes", url.path, fileAttributes.fileSize];
+				self.fileNameLabel.stringValue = fileString;
 				CGSize imgSize = img.size;
 				[self.view.window setAspectRatio:imgSize];
 				[[NSUserDefaults standardUserDefaults] setObject:fileModDate forKey:@"currentfiledate"];
