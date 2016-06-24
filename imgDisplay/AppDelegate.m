@@ -24,7 +24,7 @@
 	[filePanel setCanChooseDirectories:NO];
 	[filePanel setCanCreateDirectories:NO];
 	[filePanel setTitle:@"Choose an image file"];
-	[filePanel setAllowedFileTypes:@[@"png", @"bmp"]];
+	[filePanel setAllowedFileTypes:[NSImage imageTypes]];
 	[filePanel runModal];
 	[[NSUserDefaults standardUserDefaults] setURL:[[filePanel URLs] objectAtIndex:0] forKey:@"filepath"];
 	
@@ -33,6 +33,7 @@
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
 	// Insert code here to tear down your application
 	[[NSUserDefaults standardUserDefaults] removeObjectForKey:@"filepath"];
+	[[NSUserDefaults standardUserDefaults] removeObjectForKey:@"currentfiledate"];
 }
 
 @end
